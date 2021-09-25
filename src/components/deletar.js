@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { deletarContato, listarContatos } from './axios'
+import '../App.css'
 
 function Deletar() {
     const [lista, setLista] = useState("")
@@ -17,6 +18,7 @@ function Deletar() {
     return (
 
         <div>
+            <div className="tip">Instruções: clicar acima do contato que quiser deletar, mais depois disso é melhor nao se arrepender!</div>
 
             <button onClick={() => listar()}>Deletar contatos</button>
             {lista && lista.data?.map(element => {
@@ -27,6 +29,7 @@ function Deletar() {
                             <li>{element.email}</li>
                             <li>{element.id}</li>
                         </ul>
+                        
                     </div>
                 )
             })}

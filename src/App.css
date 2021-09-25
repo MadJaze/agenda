@@ -37,3 +37,13 @@
   padding: 10px;
   
 }
+
+.tip {
+  background: red;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
