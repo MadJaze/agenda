@@ -6,8 +6,8 @@
       "id": 5
     },
     {
-      "name": "Yeyeyeyye Garcia",
-      "email": "yazuriyamile@gmail.com",
+      "name": "José Garcia ",
+      "email": "horacioelmejor@gmail.com",
       "id": 6
     },
     {
@@ -24,6 +24,16 @@
       "name": "Hormiga Atómica",
       "email": "contraelmal@gmail.com",
       "id": 9
+    },
+    {
+      "name": "Hormiga normal",
+      "email": "lel@gmail.com",
+      "id": 10
+    },
+    {
+      "name": "Señor",
+      "email": "sinnpomnbre@gmail.com",
+      "id": 11
     }
   ]
 }

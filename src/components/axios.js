@@ -16,7 +16,6 @@ export const listarContatos = async () => {
     
     return await axios.get(url)
    
-
 }
 
 export const deletarContato = async (id) => {
@@ -28,7 +27,15 @@ export const deletarContato = async (id) => {
 
 //tentando criar um "put request"
 
+export const atualizarContato = async (id, name, email) => {
+    const data  = { name: name , email: email }
+    const url = `${baseUrl}/contacts/${id}`
+    return await axios.put(url, data)
+}
 
+
+
+/*
 export const getContact = async id => {
     const result = await axios.get(`${baseUrl}/${id}`)
     return result.data
@@ -54,5 +61,5 @@ export const modificarContatoEmail = async (id, email) => {
     return result.data 
 }
 
-
+*/
 

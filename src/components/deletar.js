@@ -10,8 +10,10 @@ function Deletar() {
         setLista(result)
     }
 
-    const deletar =  (id) => {
+    const deletar = async (id) => {
         deletarContato(id)
+        const result = await listarContatos()
+        setLista(result)
     }
 
 

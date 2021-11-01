@@ -1,0 +1,12 @@
+.container-update {
+    background: aquamarine;
+    display: inline-flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 10px;
+}
+
+.name-update {
+    font-size: 30px;
+    margin-bottom: 10px;
+}

@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
 import Listar from './components/listar';
 import Criar from './components/criar';
 import Deletar from './components/deletar';
+import Modificar from './components/modificar';
+import Modificar2 from './components/modificar2';
 import './App.css';
 
 function App() {
@@ -11,7 +13,7 @@ function App() {
     <div className="nav-container">
     <p>Lista de contatos</p>
     <ul className="nav-links">
-      <Link to="/inserir"><li>Inserir contato</li></Link>
+      <Link to="/"><li>Inserir contato</li></Link>
       <Link to="/listar"><li>Listar contatos</li></Link>
       <Link to="/deletar"><li>Deletar contato</li></Link>
       <Link to="/modificar"><li>Modificar contato</li></Link>
@@ -19,7 +21,7 @@ function App() {
     </div>
 
 <Switch>
-  <Route exact path="/inserir">
+  <Route exact path="/">
       <Criar />
   </Route>
   <Route path="/listar">
@@ -28,9 +30,14 @@ function App() {
   <Route path="/deletar">
     <Deletar />
   </Route>
-  <Route exact path="/modificar">
-Modificar
+  <Route path="/modificar">
+<Modificar />
   </Route>
+  <Route path="/modificar2/:id" component={Modificar2}>
+<Modificar2 />
+  </Route>
+
+
 
 </Switch>
 
