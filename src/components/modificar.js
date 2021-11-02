@@ -7,7 +7,7 @@ import { listarContatos } from './axios'
 
  function Modificar() {
 
-  const [array, setArray] = useState('');
+  const [array, setArray] = useState([]);
 
     useEffect (() => {
 
@@ -22,7 +22,7 @@ import { listarContatos } from './axios'
 
 
     const setData = (id, name, email) => {
-        console.log(id)
+        
         localStorage.setItem('name', name);
         localStorage.setItem('email', email);
         localStorage.setItem('id', id);
@@ -35,7 +35,7 @@ import { listarContatos } from './axios'
             {array.data?.map((data) => {
                 return (
                 
-                    <Link to={`/modificar2/${data.id}`} state={{id: data.id}} 
+                    <Link to={`/modificar2/${data.id}`} 
                     onClick={() => setData(data.id, data.name, data.email)} >
                     <div className="container-update">
                     <div className="name-update">{data.name}</div>
