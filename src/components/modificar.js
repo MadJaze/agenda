@@ -29,8 +29,8 @@ import { listarContatos } from './axios'
     }
 
     return (
-      
-        <div className="main-content">
+      <div className="supremeContainer">
+                <div className="main-content">
             
             {array.data?.map((data) => {
                 return (
@@ -51,12 +51,23 @@ import { listarContatos } from './axios'
                     </Link>
                 )
             }) }
-            <div>
-            <div className="another-thing">
-                This is another component inside this page...
-            </div>
+          
+        </div>
+        <div className="asideContent">
+        <div className="another-thing">
+               <h2> This is another component inside this page... </h2>
+                <ul>
+                    <li>That girl made me an interview, and she asked to me to know something about PHP.</li>
+                    <li>It seems they are looking hardly for someone with Backend knowlegde.</li>
+                    <li>So, I wanna practice a little bit about Auth. Login and Etc...</li>
+                    <li>I gotta be updating here what I´m about to do in this project. </li>
+                </ul>
+            </div> 
+            
+            <div className="another-thing2"> This is another component of this page.</div> 
             </div>
         </div>
+  
     )
 
  }

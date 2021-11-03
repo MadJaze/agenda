@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { criarContato } from './axios'
+import './criar.css'
 
 function Criar() {
     const [name, setName] = useState("");
@@ -16,7 +17,7 @@ function Criar() {
         
         <form className="criar-container" onSubmit={handleSubmit}>
             
-            <h1>Insira seu novo contato</h1>
+            <h1 className="titulo">Insira seu novo contato</h1>
 
             <label>Nome:</label>
             <input type="text" onChange={(event) => setName(event.target.value)}/>

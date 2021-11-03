@@ -1,24 +1,39 @@
+.supremeContainer {
+    display: flex;
+    width: 90%;
+   
+    margin: 10px auto;
+    padding: 10px;
+}
+
 .main-content {
  display: inline-block;    
  background: rgba(0, 0, 0, 0.062);
- width: 90%;
+ width: 47%;
+ margin-right: 10px;
  
- margin: 10px 5% auto;
+ 
+}
+
+h2 {
+    text-align: center;
 }
 
 
 .container-update {
-    background: white;
-    width: 500px;    
+    background: rgb(160, 160, 160);
+    width: 90%;    
     display: flex;
-    margin: 10px 0 10px 40px;
+    margin: 10px 30px 10px 10px;
     padding: 10px;
+    color: black;
     align-items: center;
 }   
 
 .name-update {
     font-size: 30px;
     margin-bottom: 10px;
+   
 }
 
 .fa-user-circle {
@@ -36,4 +51,29 @@ span {
     font-size: 30px;
     cursor: pointer;
 }
+
+.criar {
+    width: 90%;
+    background-color: brown;
+    margin: auto;
+    height: 700px;
+    padding: 20px;
+}
+
+.another-thing  {
+    background-color: blueviolet;
+    width: 100%;
+    padding: 15px;
+    height: 500px;
+    margin-top: 10px;
+}
+
+.another-thing2 {
+    background: blue;
+    margin-top: 10px;
+    width: 100%;
+    padding: 15px;
+   
+}
+
 

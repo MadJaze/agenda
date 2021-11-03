@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from './components/footer';
 import { BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
 import Listar from './components/listar';
 import Criar from './components/criar';
@@ -22,7 +23,7 @@ function App() {
 
 <Switch>
   <Route exact path="/">
-      <Criar />
+  <div className="criar">  <Criar /> </div>
   </Route>
   <Route path="/listar">
   <Listar />
@@ -40,7 +41,7 @@ function App() {
 
 
 </Switch>
-
+<Footer />
     </Router>
   );
 }
