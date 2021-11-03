@@ -1,12 +1,12 @@
 {
   "contacts": [
     {
-      "name": "Carajonte ",
+      "name": "Carajonte C.",
       "email": "guererro@gmail.com",
       "id": 5
     },
     {
-      "name": "José Garcia k triste",
+      "name": "José Garcia ",
       "email": "horacioelmejor@gmail.com",
       "id": 6
     },
@@ -54,6 +54,21 @@
       "name": "Gilda Ferreira",
       "email": "golazo@gmail.com",
       "id": 16
+    },
+    {
+      "name": "Pedro Sanchez Bierra",
+      "email": "pedropiedrales@gmail.com",
+      "id": 17
+    },
+    {
+      "name": "Asset Bundle ",
+      "email": "https://assets.notjust.dev/authentication",
+      "id": 18
+    },
+    {
+      "name": "React Native Enviroment Setup ",
+      "email": "https://reactnative.dev/docs/enviroment-setup",
+      "id": 19
     }
   ]
 }

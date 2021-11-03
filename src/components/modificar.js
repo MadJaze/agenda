@@ -30,7 +30,7 @@ import { listarContatos } from './axios'
 
     return (
       
-        <div>
+        <div className="main-content">
             
             {array.data?.map((data) => {
                 return (
@@ -38,14 +38,24 @@ import { listarContatos } from './axios'
                     <Link to={`/modificar2/${data.id}`} 
                     onClick={() => setData(data.id, data.name, data.email)} >
                     <div className="container-update">
-                    <div className="name-update">{data.name}</div>
-                    <div>{data.email}</div>
+                        <i class="far fa-user-circle"></i>
+                    <div className="card-content">
+                        <ul className="header">
+                        <li><span>{data.name} </span> </li>
+                        <li>{data.email} </li>
+                        </ul>
+                        
+                    </div>
+                    
                     </div>
                     </Link>
                 )
             }) }
-
-
+            <div>
+            <div className="another-thing">
+                This is another component inside this page...
+            </div>
+            </div>
         </div>
     )
 
