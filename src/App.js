@@ -2,6 +2,7 @@ import React from 'react'
 import Footer from './components/footer';
 import { BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
 import Listar from './components/listar';
+import Home from './components/home';
 import Criar from './components/criar';
 import Deletar from './components/deletar';
 import Modificar from './components/modificar';
@@ -38,7 +39,7 @@ function App() {
 <Modificar2 />
   </Route>
 
-
+<Route path ='/home'><Home /></Route>
 
 </Switch>
 <Footer />
