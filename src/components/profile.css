@@ -1,0 +1,16 @@
+.user_profile {
+    text-align: center;
+   
+}
+
+.profilePicture{
+    border-radius: 50%;
+    cursor: pointer;
+    margin:  10px auto; 
+}
+
+.userButton {
+    background: rgb(121, 121, 219);
+    color: white;
+    margin: 10px auto;
+}
