@@ -47,3 +47,74 @@
   margin-top: 15px;
   margin-bottom: 15px;
 }
+
+/*------Search bar CSS settings -------*/
+
+body {
+  margin: 0;
+  padding: 0;
+
+}
+
+.searchBarContainer {
+  height: 70px;
+  
+}
+
+.searchBox {
+  background: #2f3640;
+ 
+ height: 40px;
+ border-radius: 40px;
+ padding: 10px;
+ display: flex;
+ justify-content: space-between;
+ 
+ position: absolute;
+ top: 12%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ 
+}
+
+.searchBox:hover > .search-txt {
+  width: 240px;
+  padding: 0 6px;
+  
+}
+.searchBox:hover > .search-btn {
+  background: whitesmoke;
+  
+}
+
+
+.search-btn {
+  color: #e84118;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #2f3640;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  transition: 0.4s;
+  border: none;
+
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0px;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+}
+
+
+

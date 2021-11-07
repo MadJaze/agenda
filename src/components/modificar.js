@@ -1,7 +1,7 @@
 import React, { useEffect, useState  } from 'react'
 import './modificar.css'
 import { Link } from 'react-router-dom';
-import { listarContatos } from './axios'
+import { deletarContato, listarContatos } from './axios'
 
 
 
@@ -20,6 +20,11 @@ import { listarContatos } from './axios'
 
     }, [])
 
+    const deleteById = async(id) => {
+        deletarContato(id)
+        const result = await listarContatos()
+        setArray(result) 
+    }
 
     const setData = (id, name, email) => {
         
@@ -35,8 +40,7 @@ import { listarContatos } from './axios'
             {array.data?.map((data) => {
                 return (
                 
-                    <Link to={`/modificar2/${data.id}`} 
-                    onClick={() => setData(data.id, data.name, data.email)} >
+                   
                     <div className="container-update">
                         <i class="far fa-user-circle"></i>
                     <div className="card-content">
@@ -47,8 +51,13 @@ import { listarContatos } from './axios'
                         
                     </div>
                     
+                    <div className="icons-action">
+                    <Link to={`/modificar2/${data.id}`} 
+                    onClick={() => setData(data.id, data.name, data.email)} >     <i className="far fa-edit"></i>  </Link>
+                            <i class="far fa-trash-alt" onClick={() => deleteById(data.id)}></i>
+                            </div>
                     </div>
-                    </Link>
+                   
                 )
             }) }
           
@@ -60,7 +69,7 @@ import { listarContatos } from './axios'
                     <li>That girl made me an interview, and she asked to me to know something about PHP.</li>
                     <li>It seems they are looking hardly for someone with Backend knowlegde.</li>
                     <li>So, I wanna practice a little bit about Auth. Login and Etc...</li>
-                    <li>I gotta be updating here what I´m about to do in this project. </li>
+                    <li>Now, im placing some buttons, some functions... Let´s also make a beautifull search bar. </li>
                 </ul>
             </div> 
             

@@ -7,6 +7,7 @@ import Criar from './components/criar';
 import Deletar from './components/deletar';
 import Modificar from './components/modificar';
 import Modificar2 from './components/modificar2';
+import SearchBar from './components/searchBar';
 import './App.css';
 
 function App() {
@@ -21,7 +22,9 @@ function App() {
       <Link to="/modificar"><li>Modificar contato</li></Link>
     </ul>
     </div>
-
+    <div className="searchBarContainer"> 
+      <SearchBar />
+    </div>
 <Switch>
   <Route exact path="/">
   <div className="criar">  <Criar /> </div>
@@ -40,7 +43,7 @@ function App() {
   </Route>
 
 <Route path ='/home'><Home /></Route>
-
+<div className="criar">  <Route path ='/test'><SearchBar /></Route> </div>
 </Switch>
 <Footer />
     </Router>

@@ -1,11 +1,6 @@
 {
   "contacts": [
     {
-      "name": "Log out System Please!",
-      "email": "guererro@gmail.com",
-      "id": 5
-    },
-    {
       "name": "Make a Task to do",
       "email": "horacioelmejor@gmail.com",
       "id": 6
@@ -16,49 +11,14 @@
       "id": 7
     },
     {
-      "name": "Hormiga Atómica ",
-      "email": "contraelmal@gmail.com",
-      "id": 9
-    },
-    {
       "name": "Auth0 for authenticate",
       "email": "lel@gmail.com",
       "id": 10
     },
     {
-      "name": "Rene González ",
-      "email": "sinnpomnbre@gmail.com",
-      "id": 11
-    },
-    {
-      "name": "Jasiel",
-      "email": "madjaze.b1@gmail.com",
+      "name": "https://ev01.to/movie",
+      "email": "to watch some movies",
       "id": 12
-    },
-    {
-      "name": "Jessica Fuentes",
-      "email": "jessica1998@gmail.com",
-      "id": 13
-    },
-    {
-      "name": "Yender el bubus",
-      "email": "yenderhulk@gmail.com",
-      "id": 14
-    },
-    {
-      "name": "Dayler el bubus",
-      "email": "jajajajajaja@gmail.com",
-      "id": 15
-    },
-    {
-      "name": "Gilda Ferreira",
-      "email": "golazo@gmail.com",
-      "id": 16
-    },
-    {
-      "name": "Pedro Sanchez Bierra",
-      "email": "pedropiedrales@gmail.com",
-      "id": 17
     },
     {
       "name": "Asset Bundle ",
@@ -69,6 +29,11 @@
       "name": "React Native Enviroment Setup ",
       "email": "https://reactnative.dev/docs/enviroment-setup",
       "id": 19
+    },
+    {
+      "name": "Search bar",
+      "email": "↑↑ there",
+      "id": 20
     }
   ]
 }
