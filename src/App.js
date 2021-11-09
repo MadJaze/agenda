@@ -8,6 +8,7 @@ import Deletar from './components/deletar';
 import Modificar from './components/modificar';
 import Modificar2 from './components/modificar2';
 import SearchBar from './components/searchBar';
+import ContactData from './db.json'
 import './App.css';
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
     </ul>
     </div>
     <div className="searchBarContainer"> 
-      <SearchBar />
+      <SearchBar placeholder="Type Something..." data={ContactData}/>
     </div>
 <Switch>
   <Route exact path="/">

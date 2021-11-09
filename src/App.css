@@ -116,5 +116,17 @@ body {
   width: 0px;
 }
 
+.dataResult {
+  margin-top: 80px;
+}
+
+.user {
+display: flex;
+justify-content: center;
+}
+.user p {
+margin: 10px;
+}
+
 
 
