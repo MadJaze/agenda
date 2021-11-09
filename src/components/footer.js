@@ -10,7 +10,7 @@ export default function Footer() {
 
             
                 <ul className='icons'>
-                  <Link to="/home" > <li><i className="fas fa-home"> </i> Home</li> </Link>
+         
                  <Link to="/test">   <li>  <i class="fas fa-sign-in-alt"></i> Login</li> </Link>
                  <Link to="/login">   <li> <i class="fas fa-sign-out-alt"></i> Logout</li> </Link>
                  <Link to="/???">      <li> <i class="fas fa-question-circle"></i> ???</li> </Link>

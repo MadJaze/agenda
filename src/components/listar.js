@@ -3,7 +3,7 @@ import { listarContatos } from './axios'
 import './modificar.css'
 
 function Listar() {
-   const [lista, setLista] = useState("")
+   const [lista, setLista] = useState([])
    
    
 /*const fazerLista = async() => {

@@ -4,7 +4,9 @@ import './profile.css'
 
 const Profile = () => {
 
-    const {user, isAuthenticated} = useAuth0()
+    const {user, isAuthenticated} = useAuth0();
+    const { loginWithRedirect } = useAuth0();
+    const { logout } = useAuth0();
 
     return (
 
@@ -12,13 +14,14 @@ const Profile = () => {
 
         {/*<pre>{JSON.stringify(user)} </pre> */}
        
-        <img src={user.picture} alt={user.name} className="profilePicture"/> 
-       <h2>{user.name}</h2>
-       <p>{user.email}</p>
+        <img src={user.picture} alt={user.name} className="profilePicture"
+        onClick={() => logout()}/> 
+      {/* <h2>{user.name}</h2>
+       <p>{user.email}</p> */}
 
         
 
-       </div> : <img src="./user.png" alt="No Profile yet!" className="profilePicture"/> 
+       </div> :<i className="fas fa-user-circle" onClick={() => loginWithRedirect()}></i> 
             
         )
        

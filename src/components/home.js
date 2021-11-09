@@ -1,6 +1,6 @@
 import React from 'react'
 import LoginButton from './loginButton'
-import Profile from './profile'
+
 import LogoutButton from './logoutButton'
 import { useAuth0 } from '@auth0/auth0-react'
 
@@ -13,9 +13,10 @@ if (isLoading) return <h1>Loading...</h1>
     return (
 <div>
  
- {isAuthenticated ? <LogoutButton /> : <LoginButton /> }
+<h1> Main Content </h1>
+<h2> Space under construction</h2>
  
-<Profile />
+
 
 </div>
     )

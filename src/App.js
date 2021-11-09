@@ -1,10 +1,10 @@
 import React from 'react'
 import Footer from './components/footer';
 import { BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
-import Listar from './components/listar';
+import Profile from './components/profile'
 import Home from './components/home';
 import Criar from './components/criar';
-import Deletar from './components/deletar';
+
 import Modificar from './components/modificar';
 import Modificar2 from './components/modificar2';
 import SearchBar from './components/searchBar';
@@ -14,28 +14,30 @@ import './App.css';
 function App() {
   return (
     <Router>
+      <div className="supremeNavContainer">
     <div className="nav-container">
-    <p>Lista de contatos</p>
+    <p className="logo">Crazy-Wave  <i class="fas fa-eye"></i></p>
     <ul className="nav-links">
-      <Link to="/"><li>Inserir contato</li></Link>
-      <Link to="/listar"><li>Listar contatos</li></Link>
-      <Link to="/deletar"><li>Deletar contato</li></Link>
-      <Link to="/modificar"><li>Modificar contato</li></Link>
+    <Link to="/" > <li><i className="fas fa-home"> </i> Home</li> </Link>
+      <Link to="/criar"><li>Add Contacts</li></Link> 
+      <Link to="/modificar"><li>View Contacts</li></Link>
+      <p><Profile /></p>
     </ul>
     </div>
-    <div className="searchBarContainer"> 
-      <SearchBar placeholder="Type Something..." data={ContactData}/>
+    
     </div>
+   
 <Switch>
-  <Route exact path="/">
+
+<Route exact path ='/'>
+ <div className="criar"> <Home /> </div>
+  </Route>
+
+  <Route  path="/criar">
   <div className="criar">  <Criar /> </div>
   </Route>
-  <Route path="/listar">
-  <Listar />
-  </Route>
-  <Route path="/deletar">
-    <Deletar />
-  </Route>
+ 
+ 
   <Route path="/modificar">
 <Modificar />
   </Route>
@@ -43,7 +45,7 @@ function App() {
 <Modificar2 />
   </Route>
 
-<Route path ='/home'><Home /></Route>
+
 <div className="criar">  <Route path ='/test'><SearchBar /></Route> </div>
 </Switch>
 <Footer />

@@ -10,7 +10,6 @@ const [ input, setInput ] = useState("");
 const [ output, setOutput ] = useState([]);
 
 
-
 useEffect (() => {
 
     const asyncDados = async() => {

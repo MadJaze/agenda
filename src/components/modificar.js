@@ -2,7 +2,8 @@ import React, { useEffect, useState  } from 'react'
 import './modificar.css'
 import { Link } from 'react-router-dom';
 import { deletarContato, listarContatos } from './axios'
-
+import ContactData from '../db.json'
+import SearchBar from './searchBar';
 
 
  function Modificar() {
@@ -33,8 +34,22 @@ import { deletarContato, listarContatos } from './axios'
         localStorage.setItem('id', id);
     }
 
+    <div className="searchBarContainer"> 
+    <SearchBar placeholder="Type Something..." data={ContactData}/>
+  </div>
+
     return (
+        
+        <div>
+            
+            <div className="searchBarContainer"> 
+    <SearchBar placeholder="Type Something..." data={ContactData}/>
+  </div>
+
       <div className="supremeContainer">
+          
+    
+
                 <div className="main-content">
             
             {array.data?.map((data) => {
@@ -69,12 +84,15 @@ import { deletarContato, listarContatos } from './axios'
                     <li>That girl made me an interview, and she asked to me to know something about PHP.</li>
                     <li>It seems they are looking hardly for someone with Backend knowlegde.</li>
                     <li>So, I wanna practice a little bit about Auth. Login and Etc...</li>
-                    <li>Now, im placing some buttons, some functions... Let´s also make a beautifull search bar. </li>
+                    <li>Now, im placing some buttons, some functions... Let´s also make a beautifull search bar.  What´s about an inventory system?</li>
+                    <li>To say, we´ve in storage 5 any items here, you buy two of them, then we have three remaining, for example.</li>
+                    <li>More information to db.json, I guess...</li>
                 </ul>
             </div> 
             
-            <div className="another-thing2"> This is another component of this page.</div> 
+            <div className="another-thing2"> This is another component of this page. After fixing some links and buttons, I´ve to create a responsive system.</div> 
             </div>
+        </div>
         </div>
   
     )

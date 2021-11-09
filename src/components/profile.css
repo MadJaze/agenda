@@ -1,12 +1,15 @@
 .user_profile {
     text-align: center;
+    margin-left: 25px;
    
 }
 
 .profilePicture{
+   
     border-radius: 50%;
     cursor: pointer;
     margin:  10px auto; 
+    width: 40px;
 }
 
 .userButton {
@@ -14,3 +17,4 @@
     color: white;
     margin: 10px auto;
 }
+
