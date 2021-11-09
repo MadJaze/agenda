@@ -3,7 +3,7 @@ import { deletarContato, listarContatos } from './axios'
 import '../App.css'
 
 function Deletar() {
-    const [lista, setLista] = useState("")
+    const [lista, setLista] = useState([])
 
     const listar = async () => {
         const result = await listarContatos()

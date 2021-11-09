@@ -1,6 +1,7 @@
 {
   "name": "docs",
   "version": "0.1.0",
+  "homepage": "docs/",
   "private": true,
   "dependencies": {
     "@auth0/auth0-react": "^1.8.0",
